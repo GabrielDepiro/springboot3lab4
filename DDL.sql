@@ -11,7 +11,9 @@ grant select, insert, delete, update on spring.* to user@'localhost';
 use spring;
 
 create table usr_usuario (
+  /*long*/
   usr_id bigint unsigned not null auto_increment,
+  /*String*/
   usr_nome varchar(20) not null,
   usr_senha varchar(150) not null,
   primary key (usr_id),
